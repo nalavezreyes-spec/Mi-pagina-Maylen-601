@@ -1,49 +1,46 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera pagina web</title>
-    <link rel="stylesheet" href="styles.css"
-  </head>
-  <body>
-    <header>
-      <h1>Mi Página Personal</h1>
-    </header>
 
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#pec">Proyecto PEC</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi primera pagina web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <img
-        src="img/tarjeta.png"
-        alt="Foto personal"
-        width="340"
-        height="200px"
-      />
+<body>
+  <header>
+    <h1>Mi Página Personal</h1>
+  </header>
 
-      <p>Hola, mi nombre es Nely Maylen.</p>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#pec">Proyecto PEC</a>
+  </nav>
 
-      <p>Soy estudiante en el CECYTEO-35.</p>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p id="mensaje2" style="display:none;"></p>
+    <button onclick="Mostrarmensaje2()">Mostrar mensaje</button>
+    <br><br>
+    <img src="img/tarjeta.png" alt="Foto personal" width="340" height="200px" />
 
-      <p>Me gusta la tecnología y aprender sobre computación.</p>
+    <p>Hola, mi nombre es Nely Maylen.</p>
 
-      <!-- <img src="imagen.jpg" alt="Descripción de la imagen"> -->
-    </section>
+    <p>Soy estudiante en el CECYTEO-35.</p>
 
-    <section id="pec">
-      <h2>Proyecto Escolar Comunitario</h2>
+    <p>Me gusta la tecnología y aprender sobre computación.</p>
 
+    <!-- <img src="imagen.jpg" alt="Descripción de la imagen"> -->
+  </section>
+
+  <section id="pec">
+    <h2>Proyecto Escolar Comunitario</h2>
+    <p id="mensaje" style="display:none;"></p>
+      <button onclick="Mostrarmensaje()">Mostrar mensaje</button>
+  
       <h3>Huellas: cuidado animal y salud comunitaria</h3>
-     <img
-        src="img/BANNER.png"
-        alt="Foto personal"
-        width="340"
-        height="200px"
-        />
+      <img src="img/BANNER.png" alt="Foto personal" width="340" height="200px" />
       <p>
         Este proyecto busca promover el cuidado responsable de los perros en la
         comunidad de San Antonino el Alto.
@@ -63,5 +60,7 @@
     <footer>
       <p>2026 - Nely Maylen</p>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
