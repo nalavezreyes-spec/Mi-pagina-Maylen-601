@@ -7,15 +7,31 @@
   <title>Mi primera pagina web</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<!-- Botón flotante -->
+<a href="https://wa.me/521234567890?text=Hola%20quiero%20más%20información" class="whatsapp-float" target="_blank"
+  rel="noopener noreferrer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
+<a href="https://www.facebook.com/HOLA_QUIERO MAS INFORMACION" 
+   class="facebook-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+         alt="Facebook" 
+         class="facebook-icon">
+</a>
 
 <body>
   <header>
     <h1>Mi Página Personal</h1>
+    <button onclick="toggleDarkMode()">🌙 Modo oscuro</button>
   </header>
 
   <nav>
     <a href="#sobre-mi">Sobre mí</a>
-    <a href="#pec">Proyecto PEC</a>
+    <a href="#pec">Proyecto PEC 
+      
+    </a>
   </nav>
 
   <section id="sobre-mi">
@@ -37,30 +53,67 @@
   <section id="pec">
     <h2>Proyecto Escolar Comunitario</h2>
     <p id="mensaje" style="display:none;"></p>
-      <button onclick="Mostrarmensaje()">Mostrar mensaje</button>
+    <button onclick="Mostrarmensaje()">Mostrar mensaje</button>
+
+    <h3>Huellas: cuidado animal y salud comunitaria</h3>
+    <img src="img/BANNER.png" alt="Foto personal" width="340" height="200px" />
+    <p>
+      Este proyecto busca promover el cuidado responsable de los perros en la
+      comunidad de San Antonino el Alto.
+    </p>
+
+    <p>
+      La problemática principal es la presencia de perros en la vía pública,
+      muchos de ellos sin esterilizar o sin vacunas.
+    </p>
+
+    <p>
+      A través de este proyecto se busca crear conciencia sobre el bienestar
+      animal y la salud comunitaria.
+    </p>
+  </section>
+<section id="contacto">
+  <h2>Contacto</h2>
+
+  <form class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+    
+  </form>
+</section>
+  <script src="script.js"></script>
   
-      <h3>Huellas: cuidado animal y salud comunitaria</h3>
-      <img src="img/BANNER.png" alt="Foto personal" width="340" height="200px" />
-      <p>
-        Este proyecto busca promover el cuidado responsable de los perros en la
-        comunidad de San Antonino el Alto.
-      </p>
-
-      <p>
-        La problemática principal es la presencia de perros en la vía pública,
-        muchos de ellos sin esterilizar o sin vacunas.
-      </p>
-
-      <p>
-        A través de este proyecto se busca crear conciencia sobre el bienestar
-        animal y la salud comunitaria.
-      </p>
-    </section>
-
-    <footer>
-      <p>2026 - Nely Maylen</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
+<section id="ACORDEON">
+<h2>preguntas</h2>
+  <p>Esta es una nueva sección de mi página web.</p>
+  <h3>Preguntas frecuentes</h3>
+
+<details>
+  <summary>¿De qué trata el proyecto?</summary>
+  <p>Busca concientizar sobre el cuidado de los animales en la comunidad.</p>
+</details>
+
+<details>
+  <summary>¿Quiénes participan?</summary>
+  <p>Estudiantes del CECYTEO-35, profesores y la comunidad local.</p>
+</details>
+
+<details>
+  <summary>¿Cuál es el objetivo?</summary>
+  <p>Promover la salud comunitaria y el bienestar animal.</p>
+</details>
+</section>
+ <footer>
+    <p>2026 - Nely Maylen</p>
+  </footer>

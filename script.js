@@ -16,3 +16,6 @@ function Mostrarmensaje2 (){
     mensaje.style.transform = "translateY(0)";
     },50);
 }
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
